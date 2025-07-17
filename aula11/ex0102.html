@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAIS</title>
+</head>
+<body>
+    <h1>Onde você vive?</h1>
+    <input type="text" name="pais" id="txtp">
+    <input type="button" value="Enviar" onclick="clicar()">
+    <div id="res"></div>
+
+    <script>
+        
+
+        function clicar() {
+            var pais = document.getElementById('txtp')
+            var res = document.getElementById('res')
+            var tex = (pais.value)
+
+            if (tex == 'Brasil'){
+                res.innerHTML = 'Brasileiro!'
+            } else {
+                res.innerHTML = 'Estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>
